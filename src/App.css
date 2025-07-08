@@ -1,41 +1,51 @@
-#root {
-  max-width: 1280px;
+.App {
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.notifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #155efc;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.notification-content {
+  flex: 1;
 }
 
-.card {
-  padding: 2em;
+.clear-button {
+  background-color: #e2014c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
 }
 
-.read-the-docs {
-  color: #888;
+.clear-all-button {
+  background-color: #444;
+  color: rgb(255, 23, 23);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.clear-all-button:disabled {
+  background-color: #eb0404;
+  cursor: not-allowed;
 }
